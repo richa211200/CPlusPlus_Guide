@@ -1,7 +1,10 @@
-// function: is block of code
-// for best practice/code readability-maintainability always try to write new function for each logic 
+// Resource: https://www.geeksforgeeks.org/functions-in-cpp/
 
-// syntax - function
+// function: is block of code
+// for best practice/code readability-maintainability always try to write 
+// new function for each logic 
+
+// Syntax :
 // what_I_will_give_back functionName(What_you_have_to_give_me){
     
     //what function will do
@@ -14,25 +17,38 @@
 using namespace std;
 
 int sayTwo();
+int add (int a, int b);
 
 int sayTwo(){
 
     int temp = 2;
-    cout<<temp<<endl;
+    cout<<"in sayTwo : " << temp <<endl;
     return temp;
 }
 
 void sayThree(){
-    cout<<"3"<<endl;
+    cout<<"in sayThree: 3"<<endl;
 }
+
+int add (int a, int b) {
+	return a + b;
+}
+
 
 int main() {
 
+    cout << "sayTwo() called : "<< endl;
     sayTwo();
-    int sum = sayTwo() + 5;
-    cout<< sum <<endl;
+    cout << "sayTwo() done : "<< endl;
+
+    int sum = 5 + sayTwo(); // after done sayTwo is called here so it prints in saytwo again
+    cout<< "sum : " << sum <<endl;
     sayThree();
 
+    add ( 2, 3) ;
+		
+	int sum2 = add (3,4) + 5;
+	cout << "sum : " << sum2 << endl; 
 
     return 0;
 }

@@ -54,3 +54,8 @@ int main() {
 
     return 0;
 }
+
+// life-age: 12
+// lifeIsFun-age: 22
+// lifeV: 11
+// lifeIsFunV: 21

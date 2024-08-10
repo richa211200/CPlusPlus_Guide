@@ -78,3 +78,12 @@ int main() {
     return 0;
 
 }
+
+// output:
+// score: 10
+// mike id: 1
+// mike name : Richa
+// heap_score: 0x5d43506832b0
+// heap_score id: 1
+// heap_score name: Richa
+

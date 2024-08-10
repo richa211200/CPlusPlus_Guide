@@ -9,10 +9,6 @@
 // Good documentation:
 // https://learn.microsoft.com/en-us/cpp/cpp/smart-pointers-modern-cpp?view=msvc-170
 
-// Types of smart pointers
-// Unique pointer : frees up memory as soon as scope ends
-//                  you cannot copy unique pointers
-
 
 // Smart pointers in C++ are specialized pointer objects that automatically manage memory,
 // reducing the risk of memory leaks and dangling pointers. They are designed to provide
@@ -27,13 +23,21 @@
     // This manual memory management can lead to common issues like:
 
     // Memory Leaks: Forgetting to call delete after new.
-    // Dangling Pointers: Accessing a pointer after the associated object has been deleted.
+    // Dangling Pointers: Accessing a pointer after associated object has been deleted.
     // Double Deletion: Calling delete on the same pointer twice, leading to undefined behavior.
 // Smart pointers automate memory management, helping avoid these issues by
 // ensuring proper resource handling.
 
+// Types of smart pointers
+// Unique pointer : frees up memory as soon as scope ends
+//                  you cannot copy unique pointers
+// shared pointer
+// weak pointer
+
 // Types of Smart Pointers
-    // std::unique_ptr: Represents sole ownership of a resource. The resource is
+    // std::unique_ptr: frees up memory as soon as scope ends
+//                  you cannot copy unique pointers
+    // Represents sole ownership of a resource. The resource is
     // automatically released when the unique pointer goes out of scope. 
     // This type of pointer cannot be copied, ensuring unique ownership.
 

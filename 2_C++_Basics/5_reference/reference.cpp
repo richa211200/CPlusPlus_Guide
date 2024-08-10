@@ -1,6 +1,7 @@
 // pointer only points to memory location
 
-// reference variable holds some variable value and any change made to reference can change variable value
+// reference variable holds some variable value and any change made to 
+// reference can change variable value
 
 
 #include <iostream>

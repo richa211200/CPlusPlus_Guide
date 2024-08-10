@@ -29,7 +29,7 @@ int main(){
 //      The ++ operator here is a post-increment, which means it increments the pointer ap but returns-
 //      the original pointer before it was incremented.
 //      This operation moves the pointer ap from the first element (match[0]) to the second element (match[1]).
-//      The * operator dereferences the pointer, so *ap refers to the value at the current position of ap.-
+//      The * operator dereferences the pointer, so *ap refers to the value at the current position of ap
 //      But due to post-increment, this dereferencing happens before the pointer is moved.       
 // array pointers are smart enough to understand that ++ means next value in referenced array
 

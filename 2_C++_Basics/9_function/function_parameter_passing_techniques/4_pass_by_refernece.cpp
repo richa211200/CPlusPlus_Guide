@@ -33,6 +33,18 @@ int main() {
     cout << "age value after running life(): " << ageV <<endl;
 }
 
+// life - age: 11
+// life - age value: 11
+// life - after ++age: 12
+// life - after ++age value: 12
+
+// age address after running life(): 0x7fff3bea6f64
+// age value after running life(): 12
+
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
+// ------------------------------------------------------------------------------------------
+
 // second method
 
 // #include<iostream>

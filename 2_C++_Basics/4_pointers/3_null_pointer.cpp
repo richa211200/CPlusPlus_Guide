@@ -59,6 +59,12 @@ int main() {
 }
 
 
+// int value is : 3
+// float value is : 3.4
+// Pointer int value is : 0
+// ----------------------------------------------------------------------------
+
+
 // Benefits of Using nullptr
 // Type Safety: nullptr has a specific type designed for pointers, 
 // reducing the risk of type-related errors or accidental type conversions.

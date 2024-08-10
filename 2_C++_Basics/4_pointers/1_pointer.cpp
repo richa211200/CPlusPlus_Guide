@@ -16,11 +16,15 @@ int main(){
 
     int my_card = value;
     cout << "my_card assigned value: " << my_card << endl;
+    my_card = 30;
+    cout << "my_card assigned value 2: " << my_card << endl;
 
     my_card = *ptr; //pointer dereferencing
-    // Dereferencing is accessing the value stored at the memory location 
+    // Dereferencing is accessing value stored at memory location 
     // a pointer is pointing to
+    my_card = 50;
     cout << "my_card  dereferencing: " << my_card << endl;
+    cout << "ptr value : " << *ptr<< endl;
 
     return 0;
 }
@@ -28,6 +32,9 @@ int main(){
 // output:
 // value : 21
 // ptr value : 21
-// ptr address : 0x7ffe48ae9670
+// ptr address : 0x7ffd948638e0
+// ptr address 2: 0x7ffd948638d8
 // my_card assigned value: 21
-// my_card  dereferencing: 21
+// my_card assigned value 2: 30
+// my_card  dereferencing: 50
+// ptr value : 21
